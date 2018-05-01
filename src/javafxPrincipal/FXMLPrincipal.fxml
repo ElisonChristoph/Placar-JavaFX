@@ -49,7 +49,7 @@
             <Image url="@../imagens/95182a33bbd04f35d1627c3189799131.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="235.0" fitWidth="201.0" layoutX="32.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="235.0" fitWidth="201.0" layoutX="22.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../imagens/d795e34c2f998ac15ec275c1f6d3955d.png" />
          </image>
@@ -59,16 +59,16 @@
             <Image url="@../imagens/c15ab7382102fa50b1042721bf68d29e.png" />
          </image>
       </ImageView>
+      <ImageView fitHeight="152.0" fitWidth="317.0" layoutX="302.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/1c9843ddb91adee68dcfffe9b7132785.png" />
+         </image>
+      </ImageView>
       <Button fx:id="bFutsal" layoutX="534.0" layoutY="209.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="180.0" style="-fx-background-color: #0000E4;" text="Futsal" textAlignment="JUSTIFY" textFill="WHITE">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Button>
-      <ImageView fitHeight="152.0" fitWidth="317.0" layoutX="284.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../imagens/1c9843ddb91adee68dcfffe9b7132785.png" />
-         </image>
-      </ImageView>
       <Button fx:id="bsair" layoutX="534.0" layoutY="443.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="180.0" style="-fx-background-color: #FFFFFF;" text="Sair" textAlignment="CENTER">
          <font>
             <Font name="System Bold" size="21.0" />

@@ -39,10 +39,12 @@ public class FXMLLoginController implements Initializable {
         bacessar.setOnMouseClicked((MouseEvent e)->{
             if(tflogin.getText().equals("admin")&& pfsenha.getText().equals("admin")){
             
+                
                 JavaFXPrincipal p = new JavaFXPrincipal();
                 fecha();
                 try {
                     p.start(new Stage());
+
                 } catch (Exception ex) {
                     Logger.getLogger(FXMLLoginController.class.getName()).log(Level.SEVERE, null, ex);
                 }
