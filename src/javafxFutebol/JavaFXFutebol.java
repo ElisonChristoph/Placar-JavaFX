@@ -12,6 +12,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.media.MediaView;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -22,6 +23,7 @@ import javafx.stage.StageStyle;
 public class JavaFXFutebol extends Application {
 
     private static Stage stage;
+    
 
     /**
      * @param args the command line arguments
@@ -40,6 +42,10 @@ public class JavaFXFutebol extends Application {
         stage.setScene(scene);
         stage.show();
         setStage(stage);
+        
+        
+        
+        
         //Fecha janela ao pressionar ESC
         scene.addEventHandler(KeyEvent.KEY_PRESSED, (KeyEvent t) -> {
             if (t.getCode() == KeyCode.ESCAPE) {

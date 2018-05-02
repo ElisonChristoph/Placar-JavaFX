@@ -5,14 +5,17 @@
  */
 package javafxFutebol;
 
-import javafxPrincipal.*;
+import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.input.KeyCode;
-import javafx.scene.input.KeyEvent;
+import javafx.scene.control.Button;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+import javafx.scene.media.MediaView;
 
 /**
  *
@@ -22,11 +25,17 @@ public class FXMLFutebolController implements Initializable {
     
     
     @FXML private AnchorPane aPFutebol;
+    @FXML private MediaView mvPropaganda;
     
+    
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         
+        
+        
     } 
+    
     
     
     
