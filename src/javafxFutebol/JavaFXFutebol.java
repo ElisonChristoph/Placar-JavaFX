@@ -5,14 +5,12 @@
  */
 package javafxFutebol;
 
-import javafxlogin.*;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
-import javafx.scene.media.MediaView;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -23,6 +21,7 @@ import javafx.stage.StageStyle;
 public class JavaFXFutebol extends Application {
 
     private static Stage stage;
+    private FXMLFutebolController ffc;
     
 
     /**
@@ -41,7 +40,9 @@ public class JavaFXFutebol extends Application {
 
         stage.setScene(scene);
         stage.show();
+        stage.setFullScreen(true);
         setStage(stage);
+        
         
         
         
@@ -49,6 +50,7 @@ public class JavaFXFutebol extends Application {
         //Fecha janela ao pressionar ESC
         scene.addEventHandler(KeyEvent.KEY_PRESSED, (KeyEvent t) -> {
             if (t.getCode() == KeyCode.ESCAPE) {
+                
                 fecha();
             }
         });
@@ -63,6 +65,7 @@ public class JavaFXFutebol extends Application {
     }
 
     public void fecha() {
+        
         JavaFXFutebol.getStage().close();
     }
 
