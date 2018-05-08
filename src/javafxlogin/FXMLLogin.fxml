@@ -9,36 +9,51 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="477.0" prefWidth="741.0" style="-fx-background-color: #000020;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxlogin.FXMLLoginController">
-    <children>
-        <Button fx:id="bacessar" layoutX="468.0" layoutY="345.0" text="Acessar" />
-      <TextField id="tflogin" fx:id="tflogin" layoutX="461.0" layoutY="148.0" prefHeight="25.0" prefWidth="239.0" />
-      <Text fx:id="textLogin" fill="#07c2ed" layoutX="461.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login:">
-         <font>
-            <Font name="System Bold" size="27.0" />
-         </font>
-      </Text>
-      <Text fx:id="textSenha" fill="#07c2ed" layoutX="461.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Senha:">
-         <font>
-            <Font name="System Bold" size="27.0" />
-         </font>
-      </Text>
-      <Button id="cancelar" fx:id="bcancelar" layoutX="614.0" layoutY="345.0" mnemonicParsing="false" text="Cancelar" />
-      <Text fill="WHITE" layoutX="79.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Eletrônico">
-         <font>
-            <Font name="System Bold" size="64.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="139.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Placar">
-         <font>
-            <Font name="System Bold" size="64.0" />
-         </font>
-      </Text>
-      <ImageView fitHeight="385.0" fitWidth="447.0" layoutX="38.0" layoutY="-65.0" pickOnBounds="true" preserveRatio="true">
+<AnchorPane id="AnchorPane" prefHeight="535.0" prefWidth="773.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxlogin.FXMLLoginController">
+   <children>
+      <ImageView fitHeight="538.0" fitWidth="773.0" pickOnBounds="true">
          <image>
-            <Image url="@../imagens/e197a94c4ca913152bb335780d4f2358.png" />
+            <Image url="@../imagens/simple_background-26167.jpg" />
          </image>
       </ImageView>
-      <PasswordField fx:id="pfsenha" layoutX="461.0" layoutY="265.0" prefHeight="25.0" prefWidth="239.0" />
-    </children>
+      <Button fx:id="bacessar" layoutX="503.0" layoutY="449.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="98.0" text="Acessar">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <Text fill="TRANSPARENT" layoutX="498.0" layoutY="284.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="4.0" text="Login:">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font></Text>
+      <Text fill="TRANSPARENT" layoutX="135.0" layoutY="174.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="4.0" text="Placar">
+         <font>
+            <Font name="System Bold" size="70.0" />
+         </font></Text>
+      <Text fill="TRANSPARENT" layoutX="82.0" layoutY="281.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="4.0" text="Eletrônico">
+         <font>
+            <Font name="System Bold" size="70.0" />
+         </font>
+      </Text>
+      <Text fill="TRANSPARENT" layoutX="29.0" layoutY="395.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="4.0" text="Poliesportivo">
+         <font>
+            <Font name="System Bold" size="70.0" />
+         </font>
+      </Text>
+      <Text fill="TRANSPARENT" layoutX="494.0" layoutY="381.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="4.0" text="Senha:">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </Text>
+      <TextField fx:id="tflogin" layoutX="484.0" layoutY="307.0" prefHeight="25.0" prefWidth="250.0" />
+      <Button fx:id="bsair" layoutX="623.0" layoutY="449.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="98.0" text="Sair">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="pfsenha" layoutX="488.0" layoutY="400.0" prefHeight="25.0" prefWidth="250.0" />
+      <ImageView fitHeight="200.0" fitWidth="236.0" layoutX="505.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/login.png" />
+         </image>
+      </ImageView>
+   </children>
 </AnchorPane>

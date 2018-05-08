@@ -21,8 +21,8 @@ import javafx.stage.StageStyle;
 public class JavaFXFutebol extends Application {
 
     private static Stage stage;
-    private FXMLFutebolController ffc;
-    
+
+    private FXMLFutebolController fc;
 
     /**
      * @param args the command line arguments
@@ -40,17 +40,28 @@ public class JavaFXFutebol extends Application {
 
         stage.setScene(scene);
         stage.show();
-        stage.setFullScreen(true);
+        //stage.setFullScreen(true);
         setStage(stage);
-        
-        
-        
-        
-        
+        //Inicia Cronometro
+        scene.addEventHandler(KeyEvent.KEY_PRESSED, (KeyEvent k) -> {
+            if (k.getCode() == KeyCode.P) {
+                
+                
+                
+                
+               /////////continuar aqui
+            
+            
+            
+            
+            
+            
+            }
+        });
         //Fecha janela ao pressionar ESC
         scene.addEventHandler(KeyEvent.KEY_PRESSED, (KeyEvent t) -> {
             if (t.getCode() == KeyCode.ESCAPE) {
-                
+
                 fecha();
             }
         });
@@ -65,7 +76,7 @@ public class JavaFXFutebol extends Application {
     }
 
     public void fecha() {
-        
+
         JavaFXFutebol.getStage().close();
     }
 

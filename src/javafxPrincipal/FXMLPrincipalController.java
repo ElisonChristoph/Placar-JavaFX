@@ -5,6 +5,7 @@
  */
 package javafxPrincipal;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
@@ -17,9 +18,10 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import javafxBasquetebol.JavaFXBasquetebol;
-import javafxFutebol.JavaFXFutebol;
 import javafxFutsal.JavaFXFutsal;
 import javafxHandebol.JavaFXHandebol;
+import javafxSet.FXMLSetDadosController;
+import javafxSet.JavaFXSetDados;
 import javafxVoleibol.JavaFXVoleibol;
 
 /**
@@ -27,45 +29,53 @@ import javafxVoleibol.JavaFXVoleibol;
  * @author Elison
  */
 public class FXMLPrincipalController implements Initializable {
-    
-    
-    @FXML private Button bFutebol;
-    
-    @FXML private Button bFutsal;
-     
-    @FXML private Button bBasquetebol;
-    
-    @FXML private Button bVoleibol;
-    
-    @FXML private Button bHandebol;
-    
-    @FXML private Button bSair;
-    
-    
+
+    @FXML
+    private Button bFutebol;
+
+    @FXML
+    private Button bFutsal;
+
+    @FXML
+    private Button bBasquetebol;
+
+    @FXML
+    private Button bVoleibol;
+
+    @FXML
+    private Button bHandebol;
+
+    @FXML
+    private Button bSair;
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        bFutebol.setOnMouseClicked((MouseEvent e)->{
-           JavaFXFutebol f = new JavaFXFutebol();
+        bFutebol.setOnMouseClicked((MouseEvent e) -> {
+            JavaFXSetDados jsd = new JavaFXSetDados();
             try {
-                f.start(new Stage());
-            } catch (Exception ex) {
-                Logger.getLogger(FXMLPrincipalController.class.getName()).log(Level.SEVERE, null, ex);
+
+                jsd.setEsporte(1);
+                jsd.start(new Stage());
+
+            } catch (IOException ex) {
+                Logger.getLogger(FXMLSetDadosController.class.getName()).log(Level.SEVERE, null, ex);
             }
-            
         });
-        bFutebol.setOnKeyPressed((KeyEvent k)->{
-           if(k.getCode()== KeyCode.ENTER){
-             JavaFXFutebol f = new JavaFXFutebol();
-            try {
-                f.start(new Stage());
-            } catch (Exception ex) {
-                Logger.getLogger(FXMLPrincipalController.class.getName()).log(Level.SEVERE, null, ex);
-            }  
-           } 
-            
+        bFutebol.setOnKeyPressed((KeyEvent k) -> {
+            if (k.getCode() == KeyCode.ENTER) {
+                JavaFXSetDados jsd = new JavaFXSetDados();
+                try {
+                    jsd.setEsporte(1);
+                    jsd.start(new Stage());
+
+                } catch (IOException ex) {
+                    Logger.getLogger(FXMLSetDadosController.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+
         });
-        
-        bFutsal.setOnMouseClicked((MouseEvent e)->{
+
+        bFutsal.setOnMouseClicked((MouseEvent e) -> {
             JavaFXFutsal fs = new JavaFXFutsal();
             try {
                 fs.start(new Stage());
@@ -73,17 +83,17 @@ public class FXMLPrincipalController implements Initializable {
                 Logger.getLogger(FXMLPrincipalController.class.getName()).log(Level.SEVERE, null, ex);
             }
         });
-        bFutsal.setOnKeyPressed((KeyEvent k)->{
-            if(k.getCode() == KeyCode.ENTER){
-            JavaFXFutsal fs = new JavaFXFutsal();
-            try {
-                fs.start(new Stage());
-            } catch (Exception ex) {
-                Logger.getLogger(FXMLPrincipalController.class.getName()).log(Level.SEVERE, null, ex);
-            }
+        bFutsal.setOnKeyPressed((KeyEvent k) -> {
+            if (k.getCode() == KeyCode.ENTER) {
+                JavaFXFutsal fs = new JavaFXFutsal();
+                try {
+                    fs.start(new Stage());
+                } catch (Exception ex) {
+                    Logger.getLogger(FXMLPrincipalController.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
         });
-        bBasquetebol.setOnMouseClicked((MouseEvent e)->{
+        bBasquetebol.setOnMouseClicked((MouseEvent e) -> {
             JavaFXBasquetebol b = new JavaFXBasquetebol();
             try {
                 b.start(new Stage());
@@ -91,35 +101,35 @@ public class FXMLPrincipalController implements Initializable {
                 Logger.getLogger(FXMLPrincipalController.class.getName()).log(Level.SEVERE, null, ex);
             }
         });
-        bBasquetebol.setOnKeyPressed((KeyEvent k)->{
-            if(k.getCode() == KeyCode.ENTER){
-            JavaFXBasquetebol b = new JavaFXBasquetebol();
-            try {
-                b.start(new Stage());
-            } catch (Exception ex) {
-                Logger.getLogger(FXMLPrincipalController.class.getName()).log(Level.SEVERE, null, ex);
-            }
-            }
-        });
-        bVoleibol.setOnMouseClicked((MouseEvent e)->{
-           JavaFXVoleibol v = new JavaFXVoleibol();
-            try {
-                v.start(new Stage());
-            } catch (Exception ex) {
-                Logger.getLogger(FXMLPrincipalController.class.getName()).log(Level.SEVERE, null, ex);
+        bBasquetebol.setOnKeyPressed((KeyEvent k) -> {
+            if (k.getCode() == KeyCode.ENTER) {
+                JavaFXBasquetebol b = new JavaFXBasquetebol();
+                try {
+                    b.start(new Stage());
+                } catch (Exception ex) {
+                    Logger.getLogger(FXMLPrincipalController.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
         });
-        bVoleibol.setOnKeyPressed((KeyEvent k)->{
-            if(k.getCode() == KeyCode.ENTER){
+        bVoleibol.setOnMouseClicked((MouseEvent e) -> {
             JavaFXVoleibol v = new JavaFXVoleibol();
             try {
                 v.start(new Stage());
             } catch (Exception ex) {
                 Logger.getLogger(FXMLPrincipalController.class.getName()).log(Level.SEVERE, null, ex);
             }
+        });
+        bVoleibol.setOnKeyPressed((KeyEvent k) -> {
+            if (k.getCode() == KeyCode.ENTER) {
+                JavaFXVoleibol v = new JavaFXVoleibol();
+                try {
+                    v.start(new Stage());
+                } catch (Exception ex) {
+                    Logger.getLogger(FXMLPrincipalController.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
         });
-        bHandebol.setOnMouseClicked((MouseEvent e)->{
+        bHandebol.setOnMouseClicked((MouseEvent e) -> {
             JavaFXHandebol h = new JavaFXHandebol();
             try {
                 h.start(new Stage());
@@ -127,26 +137,24 @@ public class FXMLPrincipalController implements Initializable {
                 Logger.getLogger(FXMLPrincipalController.class.getName()).log(Level.SEVERE, null, ex);
             }
         });
-        bHandebol.setOnKeyPressed((KeyEvent k)->{
-            if(k.getCode() == KeyCode.ENTER){
-            JavaFXHandebol h = new JavaFXHandebol();
-            try {
-                h.start(new Stage());
-            } catch (Exception ex) {
-                Logger.getLogger(FXMLPrincipalController.class.getName()).log(Level.SEVERE, null, ex);
-            }
+        bHandebol.setOnKeyPressed((KeyEvent k) -> {
+            if (k.getCode() == KeyCode.ENTER) {
+                JavaFXHandebol h = new JavaFXHandebol();
+                try {
+                    h.start(new Stage());
+                } catch (Exception ex) {
+                    Logger.getLogger(FXMLPrincipalController.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
         });
-        bSair.setOnMouseClicked((MouseEvent e)->{
+        bSair.setOnMouseClicked((MouseEvent e) -> {
             fecha();
         });
-    
+
     }
-    
-    public void fecha(){
+
+    public void fecha() {
         JavaFXPrincipal.getStage().close();
     }
-    
-    
-    
+
 }

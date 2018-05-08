@@ -16,12 +16,12 @@
             <Image url="@../imagens/dad94df4987abb062d6cb1314757e0c9.png" />
          </image>
       </ImageView>
-      <Label fx:id="labelPlacarTimeB" layoutX="611.0" layoutY="110.0" text="0" textFill="WHITE">
+      <Label fx:id="lPlacarTimeDireita" layoutX="611.0" layoutY="110.0" text="0" textFill="WHITE">
          <font>
             <Font name="Arial Bold" size="72.0" />
          </font>
       </Label>
-      <Label fx:id="labelPlacarTimeA" layoutX="502.0" layoutY="110.0" text="0" textFill="WHITE">
+      <Label fx:id="lPlacarTimeEsquerda" layoutX="502.0" layoutY="110.0" text="0" textFill="WHITE">
          <font>
             <Font name="Arial Bold" size="72.0" />
          </font>
@@ -31,12 +31,12 @@
             <Font name="Arial Bold" size="72.0" />
          </font>
       </Text>
-      <Label fx:id="labelTimeA" alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="225.0" layoutY="106.0" prefHeight="93.0" prefWidth="277.0" text="Brasil" textAlignment="RIGHT" textFill="WHITE">
+      <Label fx:id="labelTimeEsquerda" alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="225.0" layoutY="106.0" prefHeight="93.0" prefWidth="277.0" text="Brasil" textAlignment="RIGHT" textFill="WHITE">
          <font>
             <Font name="System Bold" size="48.0" />
          </font>
       </Label>
-      <Label fx:id="labelTimeB" layoutX="652.0" layoutY="106.0" prefHeight="93.0" prefWidth="238.0" text="Argentina" textFill="WHITE">
+      <Label fx:id="labelTimeDireita" layoutX="652.0" layoutY="106.0" prefHeight="93.0" prefWidth="238.0" text="Argentina" textFill="WHITE">
          <font>
             <Font name="System Bold" size="48.0" />
          </font>
@@ -81,20 +81,10 @@
             <Font name="Arial" size="47.0" />
          </font>
       </Label>
-      <Label fx:id="labelCronMin" layoutX="518.0" layoutY="49.0" text="20" textFill="WHITE">
+      <Label fx:id="lCronometro" layoutX="518.0" layoutY="49.0" prefHeight="62.0" prefWidth="114.0" text="00:00" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="System Bold" size="42.0" />
          </font>
       </Label>
-      <Label fx:id="labelCronSeg" layoutX="584.0" layoutY="49.0" text="35" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="42.0" />
-         </font>
-      </Label>
-      <Text fill="WHITE" layoutX="571.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":">
-         <font>
-            <Font name="System Bold" size="42.0" />
-         </font>
-      </Text>
    </children>
 </AnchorPane>
