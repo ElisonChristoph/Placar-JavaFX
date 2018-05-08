@@ -8,8 +8,12 @@ package javafxFutebol;
 import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.application.Platform;
 import javafx.concurrent.Task;
+import javafx.event.EventHandler;
+import javafx.event.EventType;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
@@ -42,7 +46,7 @@ public class FXMLFutebolController implements Initializable {
     @FXML
     private Label lCronometro;
 
-    private static File file = new File("c:/users/elison/documents/netBeansprojects/javafxplacar/src/UEFA.mp4");
+    private static File file = new File("src/UEFA.mp4");
     private static final String mediaurl = file.toURI().toString();
     private MediaPlayer mediaplayer;
     private Media media;
@@ -88,6 +92,31 @@ public class FXMLFutebolController implements Initializable {
 
     }
 
+    public void Placar() {
+        Task t2 = new Task() {
+
+            @Override
+            protected Object call() throws Exception {
+                //while (stopc == true) {
+
+                int pe = 0;
+                pe = Integer.parseInt(lPlacarTimeEsquerda.getText());
+                pe = (pe + 1);
+                String spe = Integer.toString(pe);
+                Platform.runLater(() -> {
+
+                    lPlacarTimeEsquerda.setText(spe);
+                });
+                
+
+                //}
+                return null;
+            }
+        };
+        new Thread(t2).start();
+
+    }
+
     @FXML
     private void pausaVideo(KeyEvent event) {
         if (event.getCode() == KeyCode.ESCAPE) {
@@ -117,6 +146,7 @@ public class FXMLFutebolController implements Initializable {
         mvPropaganda.setMediaPlayer(mediaplayer);
         mediaplayer.play();
         iniciaCronometro();
+        Placar();
 
     }
 
