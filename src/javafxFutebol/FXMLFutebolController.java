@@ -97,8 +97,10 @@ public class FXMLFutebolController implements Initializable {
 
             @Override
             protected Object call() throws Exception {
-                //while (stopc == true) {
-
+                //Soma 1 gol ao placar do time da esquerda
+                //ao pressionar <-
+               aPFutebol.getScene().addEventFilter(KeyEvent.KEY_PRESSED, event -> {
+               if (event.getCode().equals(KeyCode.)) {
                 int pe = 0;
                 pe = Integer.parseInt(lPlacarTimeEsquerda.getText());
                 pe = (pe + 1);
@@ -107,8 +109,21 @@ public class FXMLFutebolController implements Initializable {
 
                     lPlacarTimeEsquerda.setText(spe);
                 });
-                
+                }
+               
+               //Soma 1 gol ao placar do time da direita
+                //ao pressionar ->
+                if (event.getCode().equals(KeyCode.D)) {
+                int pd = 0;
+                pd = Integer.parseInt(lPlacarTimeDireita.getText());
+                pd = (pd + 1);
+                String spd = Integer.toString(pd);
+                Platform.runLater(() -> {
 
+                    lPlacarTimeDireita.setText(spd);
+                });
+                }
+               });
                 //}
                 return null;
             }
