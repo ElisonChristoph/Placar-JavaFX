@@ -9,89 +9,89 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="664.0" prefWidth="897.0" style="-fx-background-color: #000020;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxBasquetebol.FXMLBasquetebolController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="667.0" prefWidth="967.0" style="-fx-background-color: #000020;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxBasquetebol.FXMLBasquetebolController">
    <children>
-      <ImageView fitHeight="494.0" fitWidth="897.0" pickOnBounds="true" preserveRatio="true">
+      <MediaView fx:id="mvBasquete" fitHeight="325.0" fitWidth="967.0" layoutY="344.0" preserveRatio="false" />
+      <ImageView fitHeight="395.0" fitWidth="967.0" pickOnBounds="true">
          <image>
             <Image url="@../imagens/ca682169e57b2c9e3f59f00ef97059bc.png" />
          </image>
       </ImageView>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff641f" height="84.0" layoutX="346.0" layoutY="322.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
-      <Label layoutX="373.0" layoutY="322.0" text="40" textFill="WHITE">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff641f" height="84.0" layoutX="379.0" layoutY="27.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Label layoutX="406.0" layoutY="27.0" text="40" textFill="WHITE">
          <font>
             <Font name="System Bold" size="57.0" />
          </font>
       </Label>
-      <Label layoutX="453.0" layoutY="322.0" text="29" textFill="WHITE">
+      <Label layoutX="486.0" layoutY="27.0" text="29" textFill="WHITE">
          <font>
             <Font name="System Bold" size="57.0" />
          </font>
       </Label>
-      <Text fill="WHITE" layoutX="440.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+      <Text fill="WHITE" layoutX="473.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":">
          <font>
             <Font size="57.0" />
          </font>
       </Text>
-      <Label layoutX="130.0" layoutY="322.0" prefHeight="51.0" prefWidth="136.0" text="Time A" textFill="WHITE">
+      <Label layoutX="163.0" layoutY="27.0" prefHeight="51.0" prefWidth="136.0" text="Time A" textFill="WHITE">
          <font>
             <Font name="System Bold" size="41.0" />
          </font>
       </Label>
-      <Label layoutX="633.0" layoutY="322.0" text="Time B" textFill="WHITE">
+      <Label layoutX="666.0" layoutY="27.0" text="Time B" textFill="WHITE">
          <font>
             <Font name="System Bold" size="41.0" />
          </font>
       </Label>
-      <Text fill="WHITE" layoutX="385.0" layoutY="442.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Periodo">
+      <Text fill="WHITE" layoutX="418.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Periodo">
          <font>
             <Font name="System Bold" size="33.0" />
          </font>
       </Text>
-      <Label layoutX="425.0" layoutY="421.0" text="2" textFill="#ff641f">
+      <Label layoutX="458.0" layoutY="126.0" text="2" textFill="#ff641f">
          <font>
             <Font name="System Bold" size="73.0" />
          </font>
       </Label>
-      <Label layoutX="143.0" layoutY="351.0" text="14" textFill="#ff641f">
+      <Label layoutX="176.0" layoutY="56.0" text="14" textFill="#ff641f">
          <font>
             <Font name="System Bold" size="96.0" />
          </font>
       </Label>
-      <Label layoutX="645.0" layoutY="351.0" text="25" textFill="#ff641f">
+      <Label layoutX="678.0" layoutY="56.0" text="25" textFill="#ff641f">
          <font>
             <Font name="System Bold" size="96.0" />
          </font>
       </Label>
-      <Text fill="WHITE" layoutX="137.0" layoutY="556.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Faltas">
+      <Text fill="WHITE" layoutX="170.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Faltas">
          <font>
             <Font name="System Bold" size="45.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="640.0" layoutY="557.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Faltas">
+      <Text fill="WHITE" layoutX="673.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Faltas">
          <font>
             <Font name="System Bold" size="45.0" />
          </font>
       </Text>
-      <Label layoutX="161.0" layoutY="546.0" text="02" textFill="#ff641f">
+      <Label layoutX="194.0" layoutY="251.0" text="02" textFill="#ff641f">
          <font>
             <Font name="System Bold" size="64.0" />
          </font>
       </Label>
-      <Label layoutX="664.0" layoutY="546.0" text="05" textFill="#ff641f">
+      <Label layoutX="697.0" layoutY="251.0" text="05" textFill="#ff641f">
          <font>
             <Font name="System Bold" size="64.0" />
          </font>
       </Label>
-      <Text fill="WHITE" layoutX="364.0" layoutY="541.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shot Clock">
+      <Text fill="WHITE" layoutX="397.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shot Clock">
          <font>
             <Font name="System Bold" size="33.0" />
          </font>
       </Text>
-      <Label layoutX="398.0" layoutY="527.0" text="24" textFill="#ff641f">
+      <Label layoutX="431.0" layoutY="232.0" text="24" textFill="#ff641f">
          <font>
             <Font name="System Bold" size="84.0" />
          </font>
       </Label>
-      <MediaView fx:id="mvbasquete" fitHeight="200.0" fitWidth="200.0" layoutX="346.0" layoutY="24.0" />
    </children>
 </AnchorPane>

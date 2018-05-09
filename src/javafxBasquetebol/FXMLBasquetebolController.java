@@ -6,8 +6,6 @@
 package javafxBasquetebol;
 
 import java.io.File;
-import javafxFutebol.*;
-import javafxPrincipal.*;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
@@ -21,13 +19,23 @@ import javafx.scene.media.MediaView;
  * @author Elison
  */
 public class FXMLBasquetebolController implements Initializable {
+    @FXML
+    private MediaView mvBasquete;
+    
+    private static File file = new File("src/NET.mp4");
+    private static final String mediaurl = file.toURI().toString();
+    private MediaPlayer mediaplayer;
+    private Media media;
     
     
     
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-    
+    media = new Media(mediaurl);
+        mediaplayer = new MediaPlayer(media);
+        mvBasquete.setMediaPlayer(mediaplayer);
+        mediaplayer.play();
         
     }    
     

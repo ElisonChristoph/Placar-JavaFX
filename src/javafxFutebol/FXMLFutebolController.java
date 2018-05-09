@@ -71,10 +71,9 @@ public class FXMLFutebolController implements Initializable {
                     }
 
                     if (minuto == 60) {
-                        hora++;
+                        
                         minuto = 0;
                     }
-                    String hr = hora <= 9 ? "0" + hora : hora + "";
                     String min = minuto <= 9 ? "0" + minuto : minuto + "";
                     String seg = segundo <= 9 ? "0" + segundo : segundo + "";
 
@@ -100,7 +99,7 @@ public class FXMLFutebolController implements Initializable {
                 //Soma 1 gol ao placar do time da esquerda
                 //ao pressionar <-
                aPFutebol.getScene().addEventFilter(KeyEvent.KEY_PRESSED, event -> {
-               if (event.getCode().equals(KeyCode.)) {
+               if (event.getCode().equals(KeyCode.LEFT)) {
                 int pe = 0;
                 pe = Integer.parseInt(lPlacarTimeEsquerda.getText());
                 pe = (pe + 1);
@@ -113,7 +112,7 @@ public class FXMLFutebolController implements Initializable {
                
                //Soma 1 gol ao placar do time da direita
                 //ao pressionar ->
-                if (event.getCode().equals(KeyCode.D)) {
+                if (event.getCode().equals(KeyCode.G.RIGHT)) {
                 int pd = 0;
                 pd = Integer.parseInt(lPlacarTimeDireita.getText());
                 pd = (pd + 1);

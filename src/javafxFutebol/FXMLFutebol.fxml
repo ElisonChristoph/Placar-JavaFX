@@ -16,12 +16,12 @@
             <Image url="@../imagens/dad94df4987abb062d6cb1314757e0c9.png" />
          </image>
       </ImageView>
-      <Label fx:id="lPlacarTimeDireita" layoutX="611.0" layoutY="110.0" prefHeight="84.0" prefWidth="79.0" text="0" textFill="WHITE">
+      <Label fx:id="lPlacarTimeDireita" layoutX="611.0" layoutY="110.0" prefHeight="84.0" prefWidth="106.0" text="0" textFill="WHITE">
          <font>
             <Font name="Arial Bold" size="72.0" />
          </font>
       </Label>
-      <Label fx:id="lPlacarTimeEsquerda" alignment="CENTER_RIGHT" layoutX="464.0" layoutY="110.0" prefHeight="84.0" prefWidth="79.0" text="0" textAlignment="RIGHT" textFill="WHITE">
+      <Label fx:id="lPlacarTimeEsquerda" alignment="CENTER_RIGHT" layoutX="437.0" layoutY="110.0" prefHeight="84.0" prefWidth="106.0" text="0" textAlignment="RIGHT" textFill="WHITE">
          <font>
             <Font name="Arial Bold" size="72.0" />
          </font>
@@ -31,12 +31,12 @@
             <Font name="Arial Bold" size="72.0" />
          </font>
       </Text>
-      <Label fx:id="labelTimeEsquerda" alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="187.0" layoutY="106.0" prefHeight="93.0" prefWidth="277.0" text="Brasil" textAlignment="RIGHT" textFill="WHITE">
+      <Label fx:id="labelTimeEsquerda" alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="155.0" layoutY="106.0" prefHeight="93.0" prefWidth="277.0" text="Brasil" textAlignment="RIGHT" textFill="WHITE">
          <font>
             <Font name="System Bold" size="48.0" />
          </font>
       </Label>
-      <Label fx:id="labelTimeDireita" layoutX="698.0" layoutY="106.0" prefHeight="93.0" prefWidth="238.0" text="Argentina" textFill="WHITE">
+      <Label fx:id="labelTimeDireita" layoutX="716.0" layoutY="106.0" prefHeight="93.0" prefWidth="238.0" text="Argentina" textFill="WHITE">
          <font>
             <Font name="System Bold" size="48.0" />
          </font>
